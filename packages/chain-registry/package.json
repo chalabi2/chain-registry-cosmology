@@ -1,8 +1,8 @@
 {
-  "name": "chain-registry",
+  "name": "@chalabi/chain-registry",
   "version": "1.25.0",
   "description": "Cosmos chain registry ⚛️",
-  "author": "Dan Lynch <pyramation@gmail.com>",
+  "author": "Joseph Chalabi <chalabi@chandrastation.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry/tree/master/packages/chain-registry#readme",
   "license": "SEE LICENSE IN LICENSE",
   "main": "main/index.js",
