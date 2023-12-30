@@ -1,5 +1,5 @@
 {
-  "name": "@chain-registry/client",
+  "name": "@chalabi/client",
   "version": "1.18.0",
   "description": "Chain Registry Client",
   "author": "Dan Lynch <pyramation@gmail.com>",

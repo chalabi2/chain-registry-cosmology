@@ -1,5 +1,5 @@
 {
-  "name": "@chain-registry/keplr",
+  "name": "@chalabi/keplr",
   "version": "1.30.0",
   "description": "Chain Registry to Keplr",
   "author": "Dan Lynch <pyramation@gmail.com>",

@@ -1,5 +1,5 @@
 {
-  "name": "@chain-registry/juno",
+  "name": "@chalabi/juno",
   "version": "1.26.0",
   "description": "Chain Registry info for Juno",
   "author": "Dan Lynch <pyramation@gmail.com>",

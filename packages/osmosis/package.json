@@ -1,5 +1,5 @@
 {
-  "name": "@chain-registry/osmosis",
+  "name": "@chalabi/osmosis",
   "version": "1.26.0",
   "description": "Chain Registry info for Osmosis",
   "author": "Dan Lynch <pyramation@gmail.com>",

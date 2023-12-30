@@ -1,5 +1,5 @@
 {
-  "name": "@chain-registry/cosmostation",
+  "name": "@chalabi/cosmostation",
   "version": "1.28.0",
   "description": "Chain Registry to Cosmostation",
   "author": "Dan Lynch <pyramation@gmail.com>",

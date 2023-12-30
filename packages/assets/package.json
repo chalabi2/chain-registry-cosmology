@@ -1,5 +1,5 @@
 {
-  "name": "@chain-registry/assets",
+  "name": "@chalabi/assets",
   "version": "1.26.0",
   "description": "Chain Registry Asset Lists",
   "author": "Dan Lynch <pyramation@gmail.com>",
