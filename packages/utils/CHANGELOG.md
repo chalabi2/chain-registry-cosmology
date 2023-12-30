@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.18.0 (2023-12-30)
+
+
+### Features
+
+* add chainName as optional param ([d415f33](https://github.com/cosmology-tech/chain-registry/commit/d415f33dc96651e5bb4ede689220d89ad11fe9d9))
+* add getCoinGeckoIdByDenom method ([b05e67b](https://github.com/cosmology-tech/chain-registry/commit/b05e67b4b54258412d359745b1cd095987c67eb6))
+
+
+
+
+
 # [1.17.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/utils@1.16.1...@chain-registry/utils@1.17.0) (2023-12-20)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@chalabi/types",
-  "version": "0.17.1",
+  "version": "0.17.2",
   "description": "Chain Registry types",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",

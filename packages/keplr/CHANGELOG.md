@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.30.1 (2023-12-30)
+
+
+### Bug Fixes
+
+* keplr cleanVer containing repo ([356eabc](https://github.com/cosmology-tech/chain-registry/commit/356eabc3d4bf832e9336a40c457f4f0be0915b6e))
+
+
+
+
+
 # [1.30.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.29.1...@chain-registry/keplr@1.30.0) (2023-12-20)
 
 **Note:** Version bump only for package @chain-registry/keplr

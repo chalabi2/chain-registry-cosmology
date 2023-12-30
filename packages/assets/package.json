@@ -1,6 +1,6 @@
 {
   "name": "@chalabi/assets",
-  "version": "1.26.0",
+  "version": "1.26.1",
   "description": "Chain Registry Asset Lists",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
