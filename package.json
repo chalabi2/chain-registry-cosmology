@@ -4,7 +4,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "private": true,
+  "private": false,
   "scripts": {
     "commit": "git-cz",
     "build": "lerna run prepare --parallel",
