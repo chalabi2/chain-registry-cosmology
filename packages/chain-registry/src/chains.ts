@@ -37464,7 +37464,7 @@ const chains: Chain[] = [
     $schema: '../../chain.schema.json',
     chain_name: 'cosmoshubtestnet',
     chain_id: 'provider',
-    pretty_name: 'Replicated Security Provider Testnet',
+    pretty_name: 'Cosmos Hub Public Testnet',
     status: 'live',
     network_type: 'testnet',
     bech32_prefix: 'cosmos',
@@ -37476,7 +37476,10 @@ const chains: Chain[] = [
       fee_tokens: [
         {
           denom: 'uatom',
-          fixed_min_gas_price: 0.005
+          fixed_min_gas_price: 0.005,
+          low_gas_price: 0.01,
+          average_gas_price: 0.025,
+          high_gas_price: 0.03
         }
       ]
     },
@@ -37507,9 +37510,62 @@ const chains: Chain[] = [
       },
       genesis: {
         genesis_url:
-          'https://github.com/cosmos/testnets/raw/master/replicated-security/provider/provider-genesis.json'
+          'https://github.com/cosmos/testnets/raw/master/public/genesis.json.gz'
       },
       versions: [
+        {
+          name: 'v9.0.1',
+          recommended_version: 'v9.0.1',
+          compatible_versions: ['v9.0.1'],
+          binaries: {
+            'linux/amd64':
+              'https://github.com/cosmos/gaia/releases/download/v9.0.1/gaiad-v9.0.1-linux-amd64',
+            'linux/arm64':
+              'https://github.com/cosmos/gaia/releases/download/v9.0.1/gaiad-v9.0.1-linux-arm64',
+            'darwin/amd64':
+              'https://github.com/cosmos/gaia/releases/download/v9.0.1/gaiad-v9.0.1-darwin-amd64',
+            'darwin/arm64':
+              'https://github.com/cosmos/gaia/releases/download/v9.0.1/gaiad-v9.0.1-darwin-arm64',
+            'windows/amd64':
+              'https://github.com/cosmos/gaia/releases/download/v9.0.1/gaiad-v9.0.1-windows-amd64.exe'
+          }
+        },
+        {
+          name: 'v10.0.1',
+          recommended_version: 'v10.0.1',
+          compatible_versions: ['v10.0.1'],
+          binaries: {
+            'linux/amd64':
+              'https://github.com/cosmos/gaia/releases/download/v10.0.1/gaiad-v10.0.1-linux-amd64',
+            'linux/arm64':
+              'https://github.com/cosmos/gaia/releases/download/v10.0.1/gaiad-v10.0.1-linux-arm64',
+            'darwin/amd64':
+              'https://github.com/cosmos/gaia/releases/download/v10.0.1/gaiad-v10.0.1-darwin-amd64',
+            'darwin/arm64':
+              'https://github.com/cosmos/gaia/releases/download/v10.0.1/gaiad-v10.0.1-darwin-arm64',
+            'windows/amd64':
+              'https://github.com/cosmos/gaia/releases/download/v10.0.1/gaiad-v10.0.1-windows-amd64.exe'
+          }
+        },
+        {
+          name: 'v11',
+          recommended_version: 'v11.0.0',
+          compatible_versions: ['v11.0.0'],
+          binaries: {
+            'linux/amd64':
+              'https://github.com/cosmos/gaia/releases/download/v11.0.0/gaiad-v11.0.0-linux-amd64',
+            'linux/arm64':
+              'https://github.com/cosmos/gaia/releases/download/v11.0.0/gaiad-v11.0.0-linux-arm64',
+            'darwin/amd64':
+              'https://github.com/cosmos/gaia/releases/download/v11.0.0/gaiad-v11.0.0-darwin-amd64',
+            'darwin/arm64':
+              'https://github.com/cosmos/gaia/releases/download/v11.0.0/gaiad-v11.0.0-darwin-arm64',
+            'windows/amd64':
+              'https://github.com/cosmos/gaia/releases/download/v11.0.0/gaiad-v11.0.0-windows-amd64.exe',
+            'windows/arm64':
+              'https://github.com/cosmos/gaia/releases/download/v11.0.0/gaiad-v11.0.0-windows-arm64.exe'
+          }
+        },
         {
           name: 'v12',
           recommended_version: 'v12.0.0',
@@ -37572,13 +37628,13 @@ const chains: Chain[] = [
     peers: {
       seeds: [
         {
-          id: '08ec17e86dac67b9da70deb20177655495a55407',
-          address: 'provider-seed-01.rs-testnet.polypore.xyz:26656',
+          id: '639d50339d7045436c756a042906b9a69970913f',
+          address: 'seed-01.theta-testnet.polypore.xyz:26656',
           provider: 'Hypha'
         },
         {
-          id: '4ea6e56300a2f37b90e58de5ee27d1c9065cf871',
-          address: 'provider-seed-02.rs-testnet.polypore.xyz:26656',
+          id: '3e506472683ceb7ed75c1578d092c79785c27857',
+          address: 'seed-02.theta-testnet.polypore.xyz:26656',
           provider: 'Hypha'
         }
       ],
@@ -37587,59 +37643,71 @@ const chains: Chain[] = [
     apis: {
       rpc: [
         {
-          address: 'https://rpc.provider-sentry-01.rs-testnet.polypore.xyz',
+          address: 'https://rpc.sentry-01.theta-testnet.polypore.xyz',
           provider: 'Hypha'
         },
         {
-          address: 'https://rpc.provider-sentry-02.rs-testnet.polypore.xyz',
+          address: 'https://rpc.sentry-02.theta-testnet.polypore.xyz',
           provider: 'Hypha'
         },
         {
-          address: 'https://rpc.provider-state-sync-01.rs-testnet.polypore.xyz',
+          address: 'https://rpc.state-sync-01.theta-testnet.polypore.xyz',
           provider: 'Hypha'
         },
         {
-          address: 'https://rpc.provider-state-sync-02.rs-testnet.polypore.xyz',
+          address: 'https://rpc.state-sync-02.theta-testnet.polypore.xyz',
           provider: 'Hypha'
+        },
+        {
+          address: 'https://public-cosmos-theta.w3node.com',
+          provider: 'Interchain.FM'
+        },
+        {
+          address: 'https://rpc-theta.osmotest5.osmosis.zone/',
+          provider: 'Osmosis'
         }
       ],
       rest: [
         {
-          address: 'https://rest.provider-sentry-01.rs-testnet.polypore.xyz',
+          address: 'https://rest.sentry-01.theta-testnet.polypore.xyz',
           provider: 'Hypha'
         },
         {
-          address: 'https://rest.provider-sentry-02.rs-testnet.polypore.xyz',
+          address: 'https://rest.sentry-02.theta-testnet.polypore.xyz',
           provider: 'Hypha'
         },
         {
-          address:
-            'https://rest.provider-state-sync-01.rs-testnet.polypore.xyz',
+          address: 'https://rest.state-sync-01.theta-testnet.polypore.xyz',
           provider: 'Hypha'
         },
         {
-          address:
-            'https://rest.provider-state-sync-02.rs-testnet.polypore.xyz',
+          address: 'https://rest.state-sync-02.theta-testnet.polypore.xyz',
           provider: 'Hypha'
+        },
+        {
+          address: 'https://public-cosmos-theta.w3node.com/rest/',
+          provider: 'Interchain.FM'
+        },
+        {
+          address: 'https://lcd-theta.osmotest5.osmosis.zone/',
+          provider: 'Osmosis'
         }
       ],
       grpc: [
         {
-          address: 'https://grpc.provider-sentry-01.rs-testnet.polypore.xyz',
+          address: 'https://grpc.sentry-01.theta-testnet.polypore.xyz',
           provider: 'Hypha'
         },
         {
-          address: 'https://grpc.provider-sentry-02.rs-testnet.polypore.xyz',
+          address: 'https://grpc.sentry-02.theta-testnet.polypore.xyz',
           provider: 'Hypha'
         },
         {
-          address:
-            'https://grpc.provider-state-sync-01.rs-testnet.polypore.xyz',
+          address: 'https://grpc.state-sync-01.theta-testnet.polypore.xyz',
           provider: 'Hypha'
         },
         {
-          address:
-            'https://grpc.provider-state-sync-02.rs-testnet.polypore.xyz',
+          address: 'https://grpc.state-sync-02.theta-testnet.polypore.xyz',
           provider: 'Hypha'
         }
       ]
@@ -37647,15 +37715,14 @@ const chains: Chain[] = [
     explorers: [
       {
         kind: 'Mintscan',
-        url: 'https://testnet.mintscan.io/ics-testnet-provider',
-        tx_page:
-          'https://testnet.mintscan.io/ics-testnet-provider/txs/${txHash}'
+        url: 'https://testnet.mintscan.io/cosmoshub-testnet',
+        tx_page: 'https://testnet.mintscan.io/cosmoshub-testnet/txs/${txHash}'
       },
       {
-        kind: 'Ping.pub',
-        url: 'https://explorer.rs-testnet.polypore.xyz/provider',
+        kind: 'Big Dipper',
+        url: 'https://explorer.theta-testnet.polypore.xyz/',
         tx_page:
-          'https://explorer.rs-testnet.polypore.xyz/provider/tx/${txHash}'
+          'https://explorer.theta-testnet.polypore.xyz/transactions/${txHash}'
       }
     ]
   },
