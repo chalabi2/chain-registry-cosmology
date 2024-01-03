@@ -37462,7 +37462,7 @@ const chains: Chain[] = [
   },
   {
     $schema: '../../chain.schema.json',
-    chain_name: 'rsprovidertestnet',
+    chain_name: 'cosmoshubtestnet',
     chain_id: 'provider',
     pretty_name: 'Replicated Security Provider Testnet',
     status: 'live',
